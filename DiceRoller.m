@@ -8,9 +8,7 @@ prompts = {'Enter number of dice to be rolled:',...
     'Enter the number of sides the dice should have:'};
 dlgtitle = 'Dice Specifications';
 
-answers = inputdlg({'Enter number of dice to be rolled:',...
-    'Enter the number of sides the dice should have:'},...
-    'Dice Specifications'); % opens a dialog box to get input
+answers = inputdlg(prompts,dlgtitle); % opens a dialog box to get input
 
 number_of_dice = str2double(answers{1});
 number_of_sides = str2double(answers{2});
